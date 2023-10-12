@@ -22,7 +22,7 @@ export default class Weather {
         fetch(url).then(response => {
             return response.json();
         }).then(data => {
-            document.querySelector("p").innerHTML = document.querySelector("p").innerHTML+ " " + data.data[0].temp + " °C";
+            document.querySelector("p:nth-of-type(2)").innerHTML = document.querySelector("p:nth-of-type(2)").innerHTML+ " " + data.data[0].temp + " °C";
         }).catch(error => {
             console.log(error);
         });
