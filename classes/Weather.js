@@ -18,7 +18,7 @@ export default class Weather {
     }
   
     getWeather(lat, lng) {
-      let url= `https://api.weatherbit.io/v2.0/current?lat=${lat}&lon=${lng}&key=12d97956d95243be85758969f0a7fb99`
+      let url= `https://api.weatherbit.io/v2.0/current?lat=${lat}&lon=${lng}&key=7807c68b58f74beb8dd8c0d960018117`
         fetch(url).then(response => {
             return response.json();
         }).then(data => {
